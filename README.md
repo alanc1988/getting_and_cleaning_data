@@ -17,3 +17,4 @@ Getting & Cleaning Data Course Project
 ***Files in this repository***
 - run_analysis.R - this R script is used to take in the source training and test data files on local disk, transform them and output data.
 - CookBook.md outlines information about the variables and how the data was transformed.
+- The training and test data are located in the folders train and test respectively.
