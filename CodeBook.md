@@ -73,11 +73,13 @@ The complete list of variables of each feature vector is available in 'features.
 - Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 ***run_analysis.R Overview***
-- load in relevant libraries
+- load in the library Hmisc, if this is not installed, please run install.packages("Hmisc")
 - load the train and test data into memory
 - load the files features.txt and activity_labels.txt which format the source data
-- extract the relevant mean and standard deviation data
-- merge the data
-- process the data
-- write the data to an output file
+- take a subset of the columns representing the values for the mean and standard deviation
+- format the column names using the features.txt file
+- combine the processed data from the X_train, y_train and subject_train files together, then proceed with test data
+- combine the train and test data together
+- process the data to calculate the average of each variable for each activity and each subject using the aggregation function
+- write the data to an output file "output.txt"
 
